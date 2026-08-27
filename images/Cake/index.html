@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday Subha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video class="cake-video" autoplay muted loop playsinline>
+    <source src="cake_idle.mp4" type="video/mp4">
+  </video>
+  <model-viewer class="knife-model" src="knife.glb" alt="Cake knife" camera-orbit="0deg 75deg 105%" interaction-prompt="none" exposure="1.1"></model-viewer>
+
+  <!-- Glassmorphism Blow Button in Center Middle -->
+  <button id="blow-btn" class="glass-btn">
+    <span class="btn-text">Blow</span>
+  </button>
+
+  <!-- Bottom Right Typing Style Transition Text -->
+  <div class="typing-container">
+    <div id="typing-text" class="typing-text"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

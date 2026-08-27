@@ -1,0 +1,151 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.cake-video {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.knife-model {
+  position: fixed;
+  top: 270.6px;
+  left: 719.075px;
+  z-index: 2;
+  width: min(22vw, 280px);
+  height: min(42vw, 470px);
+  transform: none;
+  background: transparent;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.knife-model.is-dragging {
+  cursor: grabbing;
+}
+
+@media (max-width: 600px) {
+  .knife-model {
+    width: 34vw;
+    height: 42vh;
+  }
+}
+
+/* Glassmorphism Blow Button in Center Bottom */
+.glass-btn {
+  position: fixed;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 16px 48px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37),
+              inset 0 0 15px 0 rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 40px 0 rgba(255, 105, 180, 0.45),
+              inset 0 0 20px 0 rgba(255, 255, 255, 0.35);
+  transform: translateX(-50%) scale(1.08);
+}
+
+.glass-btn:active,
+.glass-btn.clicked {
+  transform: translateX(-50%) scale(0.92);
+  box-shadow: 0 4px 20px 0 rgba(255, 105, 180, 0.7);
+  background: rgba(255, 105, 180, 0.35);
+}
+
+/* Click Ripple Animation */
+.glass-btn .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(0);
+  animation: ripple-effect 0.6s ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Bottom Right Corner Typing Container */
+.typing-container {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  z-index: 10;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  max-width: none;
+  box-shadow: none;
+  user-select: none;
+  transition: opacity 0.4s ease;
+}
+
+.typing-text {
+  font-family: 'Sacramento', cursive, sans-serif;
+  font-size: min(1.5rem, 3vw);
+  font-weight: 700;
+  color: #9551c7;
+  -webkit-text-stroke: 0.6px #9551c7;
+  text-align: right;
+  line-height: 1.2;
+  white-space: nowrap;
+  word-break: normal;
+  min-height: 1.2em;
+  text-shadow: none;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  background-color: #9551c7;
+  margin-left: 3px;
+  vertical-align: middle;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+

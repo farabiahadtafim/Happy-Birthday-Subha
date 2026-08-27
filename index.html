@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Happy Birthday Subha</title>
+
+  <!-- Web Icon / Favicon -->
+  <link rel="icon" type="image/png" href="images/Web Icon.png">
+  <link rel="shortcut icon" type="image/png" href="images/Web Icon.png">
+  <link rel="apple-touch-icon" href="images/Web Icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&family=Sacramento&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <audio
+    id="background-music"
+    autoplay
+    loop
+    playsinline
+    preload="auto"
+    src="music/Pov- You’re in a long-distance relationship with your partner, and it’s their birthday today, so.mp3"
+  ></audio>
+
+  <!-- Base App Container -->
+  <div id="app">
+
+    <!-- Full-Screen Cute Intro Sequence Overlay (Absolute first thing seen on load) -->
+    <div id="intro-sequence">
+      <!-- Organic Corner Blobs -->
+      <div class="intro-blob blob-tl"></div>
+      <div class="intro-blob blob-tr"></div>
+      <div class="intro-blob blob-bl"></div>
+      <div class="intro-blob blob-br"></div>
+
+      <!-- Section 1 (#step-1) -->
+      <div id="step-1" class="intro-step">
+        <div class="intro-card">
+          <img src="images/ChatGPT Image Aug 22, 2026, 05_41_12 PM.png" alt="Cute Intro Cat 1" class="intro-img" />
+          <h2 class="intro-heading">HEY!!</h2>
+          <p class="intro-subheading">I made something for you. Do you want to see?</p>
+          <div class="intro-btn-group">
+            <button id="btn-yes" class="intro-btn">Yes</button>
+            <button id="btn-no" class="intro-btn">No</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 (#step-2) -->
+      <div id="step-2" class="intro-step" style="display: none;">
+        <div class="intro-card">
+          <img src="images/ChatGPT Image Aug 22, 2026, 05_46_29 PM.png" alt="Cute Intro Cat 2" class="intro-img" />
+          <h2 class="intro-heading">HOW DARE YOU</h2>
+          <div class="intro-btn-group">
+            <button id="btn-goback" class="intro-btn">Go back</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3 (#step-3) -->
+      <div id="step-3" class="intro-step" style="display: none;">
+        <div class="intro-card">
+          <img src="images/ChatGPT Image Aug 22, 2026, 05_49_24 PM.png" alt="Cute Intro Cat 3" class="intro-img" />
+          <p class="intro-subheading cursive-large">That's a good Gurlll <span class="kiss-emoji">💋</span></p>
+          <div class="intro-btn-group">
+            <button id="btn-click" class="intro-btn">Click</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unveiled Layer (Revealed when intro sequence is completed) -->
+    <div id="unveiled-layer" class="hidden">
+
+      <!-- Slide 1: Hero Section with anti-gravity balloon & letter stream -->
+      <section id="slide-1" class="birthday-slide slide-hero">
+        <!-- Decorative Bunting Garland at top -->
+        <div class="bunting-container">
+          <svg class="bunting-svg" viewBox="0 0 1000 120" preserveAspectRatio="none">
+            <path d="M 0,20 Q 250,80 500,20 Q 750,80 1000,20" fill="none" stroke="#D4A373" stroke-width="2"
+              stroke-dasharray="6,6" />
+            <!-- Pennants -->
+            <polygon points="50,32 90,38 70,85" fill="#E8A5B8" />
+            <polygon points="120,44 160,50 140,95" fill="#F4ACB7" />
+            <polygon points="190,52 230,55 210,100" fill="#FFCAD4" />
+            <polygon points="260,55 300,53 280,98" fill="#D8E2DC" />
+            <polygon points="330,48 370,42 350,90" fill="#FFE5D9" />
+            <polygon points="400,38 440,30 420,80" fill="#E8A5B8" />
+            <polygon points="470,25 510,24 490,75" fill="#F4ACB7" />
+            <polygon points="540,28 580,33 560,82" fill="#FFCAD4" />
+            <polygon points="610,38 650,44 630,92" fill="#D8E2DC" />
+            <polygon points="680,50 720,54 700,99" fill="#FFE5D9" />
+            <polygon points="750,54 790,51 770,96" fill="#E8A5B8" />
+            <polygon points="820,45 860,39 840,88" fill="#F4ACB7" />
+            <polygon points="890,34 930,27 910,76" fill="#FFCAD4" />
+          </svg>
+        </div>
+
+        <!-- Background Floating Balloons Layer -->
+        <div id="balloons-bg-layer" class="balloons-layer bg"></div>
+
+        <!-- Hero Page Image Container -->
+        <div class="hero-container">
+          <img class="hero-image" src="images/Hero-Page.png" alt="Happy Birthday Hero Page" />
+        </div>
+
+        <!-- Foreground Floating Balloons & Emojis Layer -->
+        <div id="balloons-fg-layer" class="balloons-layer fg"></div>
+
+      </section>
+
+      <!-- Slide 2: Text & Spiral Ribbon Section -->
+      <section id="slide-2" class="birthday-slide slide-ribbon">
+        <div class="slide2-container">
+          <!-- Left Column: Typography -->
+          <div class="slide2-left">
+            <span class="slide2-date-tag">AUG 29</span>
+            <h1 class="slide2-title">
+              <span>Happy</span>
+              <span>Birthday</span>
+              <span class="highlight-subha">Shona 😘</span>
+            </h1>
+            <p class="slide2-quote">May this year bring you closer to everything you're chasing.</p>
+          </div>
+
+          <!-- Right Column: 3D Image Gallery Container -->
+          <div class="slide2-right">
+            <div id="infinity-gallery" class="spiral-ribbon-path"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 3: Scattered Polaroid Collage -->
+      <section id="slide-3" class="birthday-slide slide-polaroids">
+        <div class="polaroid-header">
+          <h2>Memories & Wishes ✨</h2>
+          <p>Drag the photos to explore!</p>
+        </div>
+
+        <div class="polaroid-canvas">
+          <!-- 8 Scattered Draggable Polaroid Cards with exact requested captions & heart icons -->
+          <div class="polaroid-card" style="--rot: -6deg; top: 10%; left: 6%;">
+            <div class="polaroid-heart">❤️</div>
+            <img src="images/Subha/Hero 2/589921938_1511684856755834_1072618423494190453_n.png" alt="Cutie"
+              class="polaroid-img">
+            <p class="polaroid-caption">Cutie</p>
+          </div>
+
+          <div class="polaroid-card" style="--rot: 8deg; top: 12%; left: 30%;">
+            <div class="polaroid-heart">❤️</div>
+            <img src="images/Subha/Hero 2/605882271_2041195483338596_7501771031874749591_n.png" alt="Baddie"
+              class="polaroid-img">
+            <p class="polaroid-caption">Baddie</p>
+          </div>
+
+          <div class="polaroid-card" style="--rot: -12deg; top: 8%; left: 54%;">
+            <div class="polaroid-heart">❤️</div>
+            <img src="images/Subha/Hero 2/608285406_4446658475561896_8283040957447243239_n.png" alt="My Love"
+              class="polaroid-img">
+            <p class="polaroid-caption">My Love</p>
+          </div>
+
+          <div class="polaroid-card" style="--rot: 5deg; top: 11%; left: 76%;">
+            <div class="polaroid-heart">❤️</div>
+            <img src="images/Subha/Hero 2/608422210_1201458685447402_2872160073547415746_n.png" alt="Beautiful"
+              class="polaroid-img">
+            <p class="polaroid-caption">Beautiful</p>
+          </div>
+
+          <div class="polaroid-card" style="--rot: -8deg; top: 52%; left: 10%;">
+            <div class="polaroid-heart">❤️</div>
+            <img src="images/Subha/Hero 2/608426947_2475852026150656_4368029200227351580_n.png" alt="Dream Girl"
+              class="polaroid-img">
+            <p class="polaroid-caption">Dream Girl</p>
+          </div>
+
+          <div class="polaroid-card" style="--rot: 10deg; top: 49%; left: 32%;">
+            <div class="polaroid-heart">❤️</div>
+            <img src="images/Subha/Hero 2/608764431_2618021481902526_1380587592484009063_n.png" alt="Sunshine"
+              class="polaroid-img">
+            <p class="polaroid-caption">Sunshine</p>
+          </div>
+
+          <div class="polaroid-card" style="--rot: -5deg; top: 53%; left: 55%;">
+            <div class="polaroid-heart">❤️</div>
+            <img src="images/Subha/Hero 2/609317788_716035808254333_363148713040591868_n.png" alt="Queen"
+              class="polaroid-img">
+            <p class="polaroid-caption">Queen</p>
+          </div>
+
+          <div class="polaroid-card" style="--rot: 7deg; top: 50%; left: 76%;">
+            <div class="polaroid-heart">❤️</div>
+            <img src="images/Subha/Hero 2/609746003_739680088750789_1009677198448807334_n.png" alt="Angel"
+              class="polaroid-img">
+            <p class="polaroid-caption">Angel</p>
+          </div>
+        </div>
+        <!-- Interactive Bouncing Heart Scroll Button -->
+        <button id="scroll-heart-btn" class="heart-scroll-btn" title="Scroll down">
+          <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </button>
+      </section>
+
+      <!-- Slide 4: Cake -->
+      <section id="slide-4" class="birthday-slide slide-cake">
+        <iframe
+          class="cake-frame"
+          src="images/Cake/index.html"
+          title="Birthday cake"
+          loading="eager"
+        ></iframe>
+      </section>
+
+      <!-- Slide 5: Birthday Book -->
+      <section id="slide-5" class="birthday-slide slide-birthday-book">
+        <iframe
+          class="birthday-book-frame"
+          src="http://localhost:3000"
+          title="Birthday book"
+          loading="eager"
+        ></iframe>
+      </section>
+    </div>
+
+    <div id="anti-gravity-layer" aria-hidden="true"></div>
+
+    <!-- Canvas Layer for Blooming & Physics Flower Particles -->
+    <canvas id="flower-canvas"></canvas>
+
+    <!-- Overlay Text (Tap to reveal with rounded pill background) -->
+    <div id="bloom-overlay-text" class="hidden">
+      <div class="reveal-prompt-badge">Tap to reveal</div>
+    </div>
+
+    <!-- Initial Envelope Screen -->
+    <div id="envelope-screen">
+      <div class="envelope-wrapper" id="envelope-btn">
+        <div class="envelope-glow"></div>
+        <img id="envelope-img" src="images/envelope-closed.webp" alt="Birthday Envelope" />
+      </div>
+      <p class="tap-to-open-text" id="tap-text">Tap to open</p>
+    </div>
+
+  </div>
+
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Pause music" title="Pause music">
+    <span class="music-toggle-icon" aria-hidden="true">♪</span>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
