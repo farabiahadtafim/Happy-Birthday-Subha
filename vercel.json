@@ -1,5 +1,0 @@
-{
-  "buildCommand": "cd 'images/Book/Birthday book' && npm run build",
-  "outputDirectory": "images/Book/Birthday book/.next",
-  "installCommand": "cd 'images/Book/Birthday book' && npm install"
-}
