@@ -2,6 +2,7 @@
 
 import { useLayoutEffect, useRef } from "react";
 import { PageFlip } from "page-flip";
+import type { SizeType } from "page-flip";
 
 const pages = Array.from({ length: 14 }, (_, index) => index + 1);
 
@@ -17,7 +18,7 @@ export default function Book() {
       pageFlip = new PageFlip(book, {
         width: 960,
         height: 1313,
-        size: "stretch",
+        size: "stretch" as SizeType,
         minWidth: 280,
         maxWidth: 960,
         minHeight: 380,
