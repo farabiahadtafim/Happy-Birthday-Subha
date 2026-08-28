@@ -348,42 +348,42 @@ function initApp() {
     if (!bgLayer || !fgLayer) return;
 
     const happyChars = [
-      'images/Happy Birthday/Happy/H.png',
-      'images/Happy Birthday/Happy/A.png',
-      'images/Happy Birthday/Happy/P.png',
-      'images/Happy Birthday/Happy/P2.png',
-      'images/Happy Birthday/Happy/Y.png'
+      'images/Happy Birthday/Happy/H.webp',
+      'images/Happy Birthday/Happy/A.webp',
+      'images/Happy Birthday/Happy/P.webp',
+      'images/Happy Birthday/Happy/P2.webp',
+      'images/Happy Birthday/Happy/Y.webp'
     ];
 
     const birthdayChars = [
-      'images/Happy Birthday/Birthday/B.png',
-      'images/Happy Birthday/Birthday/I.png',
-      'images/Happy Birthday/Birthday/R.png',
-      'images/Happy Birthday/Birthday/T.png',
-      'images/Happy Birthday/Birthday/H2.png',
-      'images/Happy Birthday/Birthday/D.png',
-      'images/Happy Birthday/Birthday/A2.png',
-      'images/Happy Birthday/Birthday/Y2.png'
+      'images/Happy Birthday/Birthday/B.webp',
+      'images/Happy Birthday/Birthday/I.webp',
+      'images/Happy Birthday/Birthday/R.webp',
+      'images/Happy Birthday/Birthday/T.webp',
+      'images/Happy Birthday/Birthday/H2.webp',
+      'images/Happy Birthday/Birthday/D.webp',
+      'images/Happy Birthday/Birthday/A2.webp',
+      'images/Happy Birthday/Birthday/Y2.webp'
     ];
 
     const balloonImages = [
-      'images/Happy Birthday/Blue Baloon.png',
-      'images/Happy Birthday/Orange Baloon.png',
-      'images/Happy Birthday/Pink Baloon.png',
-      'images/Happy Birthday/White Baloon.png',
-      'images/Happy Birthday/Multiple Ballon.png'
+      'images/Happy Birthday/Blue Baloon.webp',
+      'images/Happy Birthday/Orange Baloon.webp',
+      'images/Happy Birthday/Pink Baloon.webp',
+      'images/Happy Birthday/White Baloon.webp',
+      'images/Happy Birthday/Multiple Ballon.webp'
     ];
 
     const emojiImages = [
-      'images/Happy Birthday/1.png',
-      'images/Happy Birthday/2.png',
-      'images/Happy Birthday/3.png',
-      'images/Happy Birthday/4.png',
-      'images/Happy Birthday/8.png',
-      'images/Happy Birthday/9.png',
-      'images/Happy Birthday/104b4dc5f4f72a05a1a2479249abbdac.png',
-      'images/Happy Birthday/679e2f2349a5a6181d277f99b7bf34ce.png',
-      'images/Happy Birthday/b6776ed102c59790ab8c045e5efb358f 1.png'
+      'images/Happy Birthday/1.webp',
+      'images/Happy Birthday/2.webp',
+      'images/Happy Birthday/3.webp',
+      'images/Happy Birthday/4.webp',
+      'images/Happy Birthday/8.webp',
+      'images/Happy Birthday/9.webp',
+      'images/Happy Birthday/104b4dc5f4f72a05a1a2479249abbdac.webp',
+      'images/Happy Birthday/679e2f2349a5a6181d277f99b7bf34ce.webp',
+      'images/Happy Birthday/b6776ed102c59790ab8c045e5efb358f 1.webp'
     ];
 
     // Helper to create a unified floating word group (HAPPY or BIRTHDAY)
@@ -468,14 +468,14 @@ function initApp() {
     if (!layer || !unveiled || !activeSlides.length) return;
 
     const imagePaths = [
-      'images/Cake.png',
+      'images/Cake.webp',
       'images/love eye.webp',
-      'images/Pookie.png',
-      'images/Love.png',
-      'images/Love.png',
-      'images/Love.png',
-      'images/Love.png',
-      'images/Kissy.png'
+      'images/Pookie.webp',
+      'images/Love.webp',
+      'images/Love.webp',
+      'images/Love.webp',
+      'images/Love.webp',
+      'images/Kissy.webp'
     ];
 
     const itemCount = 16;
@@ -582,24 +582,24 @@ function initApp() {
     container.innerHTML = '';
 
     const imagePaths = [
-      'images/Subha/Hero 2/589921938_1511684856755834_1072618423494190453_n.png',
-      'images/Subha/Hero 2/605882271_2041195483338596_7501771031874749591_n.png',
-      'images/Subha/Hero 2/608285406_4446658475561896_8283040957447243239_n.png',
-      'images/Subha/Hero 2/608422210_1201458685447402_2872160073547415746_n.png',
-      'images/Subha/Hero 2/608426947_2475852026150656_4368029200227351580_n.png',
-      'images/Subha/Hero 2/608764431_2618021481902526_1380587592484009063_n.png',
-      'images/Subha/Hero 2/609317788_716035808254333_363148713040591868_n.png',
-      'images/Subha/Hero 2/609746003_739680088750789_1009677198448807334_n.png',
-      'images/Subha/Hero 2/609787795_1380210683848159_718965011234550831_n.png',
-      'images/Subha/Hero 2/610459653_1142324894445809_4908197052390803718_n.png',
-      'images/Subha/Hero 2/610526866_708574132136671_7591169867108868921_n.png',
-      'images/Subha/Hero 2/610527399_1242736521389804_2994083857528779500_n.png',
-      'images/Subha/Hero 2/611219175_1227870072774469_1519818138232412819_n.png',
-      'images/Subha/Hero 2/612020781_2148195728922309_4962677815590005296_n.png',
-      'images/Subha/Hero 2/612239488_2826753160863366_6318388729419094378_n.png',
-      'images/Subha/Hero 2/613773403_811931418544061_4967691029767441368_n.png',
-      'images/Subha/Hero 2/617546042_1814938205889674_3559039245349911653_n.png',
-      'images/Subha/Hero 2/618544167_971040386090526_4751486550846135295_n.png'
+      'images/Subha/Hero 2/589921938_1511684856755834_1072618423494190453_n.webp',
+      'images/Subha/Hero 2/605882271_2041195483338596_7501771031874749591_n.webp',
+      'images/Subha/Hero 2/608285406_4446658475561896_8283040957447243239_n.webp',
+      'images/Subha/Hero 2/608422210_1201458685447402_2872160073547415746_n.webp',
+      'images/Subha/Hero 2/608426947_2475852026150656_4368029200227351580_n.webp',
+      'images/Subha/Hero 2/608764431_2618021481902526_1380587592484009063_n.webp',
+      'images/Subha/Hero 2/609317788_716035808254333_363148713040591868_n.webp',
+      'images/Subha/Hero 2/609746003_739680088750789_1009677198448807334_n.webp',
+      'images/Subha/Hero 2/609787795_1380210683848159_718965011234550831_n.webp',
+      'images/Subha/Hero 2/610459653_1142324894445809_4908197052390803718_n.webp',
+      'images/Subha/Hero 2/610526866_708574132136671_7591169867108868921_n.webp',
+      'images/Subha/Hero 2/610527399_1242736521389804_2994083857528779500_n.webp',
+      'images/Subha/Hero 2/611219175_1227870072774469_1519818138232412819_n.webp',
+      'images/Subha/Hero 2/612020781_2148195728922309_4962677815590005296_n.webp',
+      'images/Subha/Hero 2/612239488_2826753160863366_6318388729419094378_n.webp',
+      'images/Subha/Hero 2/613773403_811931418544061_4967691029767441368_n.webp',
+      'images/Subha/Hero 2/617546042_1814938205889674_3559039245349911653_n.webp',
+      'images/Subha/Hero 2/618544167_971040386090526_4751486550846135295_n.webp'
     ];
 
     const cards = [];
